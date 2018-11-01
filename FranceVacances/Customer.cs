@@ -8,5 +8,22 @@ namespace FranceVacances
 {
     class Customer
     {
+        private String name;
+        private String phoneNumber;
+        private String email;
+        private String password;
+
+        public Customer(String Name, String PhoneNumber, String Email, String Password)
+        {
+            name = Name;
+            phoneNumber = PhoneNumber;
+            email = Email;
+            password = Password;
+        }
+
+        public string Name
+        {
+            get { return name; }
+        }
     }
 }

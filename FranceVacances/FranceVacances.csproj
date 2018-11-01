@@ -57,7 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Booking.cs" />
     <Compile Include="Filters.cs" />
-    <Compile Include="Property.cs" />
+    <Compile Include="Houses.cs" />
     <Compile Include="Searchbar.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

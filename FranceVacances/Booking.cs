@@ -8,5 +8,20 @@ namespace FranceVacances
 {
     class Booking
     {
+        private String name;
+        private DateTime birthdate;
+        private String phoneNumber;
+        private String email;
+        private String gender;
+
+        public Booking()
+        {
+            
+        }
+
+        public void GetCustomerInfo()
+        {
+            //TODO: Get customerinfo from Customer object.
+        }
     }
 }

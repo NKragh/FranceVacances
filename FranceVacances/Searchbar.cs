@@ -18,12 +18,12 @@ namespace FranceVacances
 
         public Searchbar()
         {
-
+            //TODO: Grib værdier fra UI, og sæt dem lige med properties, hvor brugeren skriver de værdier der skal søges efter.
         }
 
         public void MakeSearch()
         {
-
+            //TODO: Implementer; Skal kunne display de boliger er matcher de valgte properties
         }
     }
 }
