@@ -23,8 +23,16 @@ namespace FranceVacances
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
 
+        //TODO: Brug DatePicker fra UI til at ændre datoer i SeachBar.
+        //Eksempel på greb af værdien fra DatePicker og display den i en textblock er vist herunder.
+            //dp.SelectedDate = DateTime.Today;
+
+            //DateTime? selectedDate = dp.SelectedDate;
+
+            //DateBlock.Text = selectedDate.Value.ToString("dd.MM.yyyy");
     }
 }

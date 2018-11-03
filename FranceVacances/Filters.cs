@@ -15,17 +15,17 @@ namespace FranceVacances
         private int ratingOfficial;
         private int ratingGuest;
         private bool travelFood;
-        private String travelClass;
+        private string travelClass;
         private int roomAmount;
 
         public Filters()
         {
-            
+            //TODO: Checkliste i UI skal ændre på liste med filtrene
         }
 
         public void ApplyFilter()
         {
-            //TODO: 
+            //TODO: Metode til at applyfilter ud fra checkliste.
         }
     }
 }
