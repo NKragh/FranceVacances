@@ -11,19 +11,33 @@ namespace FranceVacances
     {
         private String airportTo;
         private String airportFrom;
-        private DateTime dateFrom;
-        private DateTime dateTo;
+        private DateTime? dateFrom;
+        private DateTime? dateTo;
         private int people;
         private string travelType;
 
-        public Searchbar()
+        public Searchbar(string travelType, string airportFrom, string airportTo, DateTime? dateInput, int numberOfTravelers)
         {
-            //TODO: Grib værdier fra UI, og sæt dem lige med properties, hvor brugeren skriver de værdier der skal søges efter.
+            //Grib værdier fra UI, hvor brugeren skriver de værdier der skal søges efter, og sæt dem lige med properties.
+
+            this.travelType = travelType;
+            this.airportFrom = airportFrom;
+            this.airportTo = airportTo;
+            this.dateFrom = dateInput;
+            this.dateTo = dateInput;
+            this.people = numberOfTravelers;
         }
 
         public void MakeSearch()
         {
-            //TODO: Implementer; Skal kunne display de boliger er matcher de valgte properties
+            //TODO: Implementer; Skal kunne display de boliger der matcher de valgte properties
+
+            
+        }
+
+        public void printValues()
+        {
+
         }
     }
 }

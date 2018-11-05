@@ -15,10 +15,11 @@ namespace FranceVacances
         private int _ratingGuest;
         private string _destinationType;
         
+//TODO: Forklar dictionaries.
 
         private Dictionary<string, bool> facilitiesDict = new Dictionary<string, bool>()
         {
-            { "Internet", false},
+            {"Internet", false},
             {"Breakfast", false},
             {"Dinner", false},
             {"Pets", false},
@@ -28,6 +29,8 @@ namespace FranceVacances
             {"Kitchen", false},
             {"Elevator", false},
         };
+
+//TODO: Forklar constructor
 
         /// <summary>
         /// Constructor of Houses class. Takes multiple inputs.
