@@ -23,12 +23,11 @@ namespace FranceVacances
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
-
+        //TODO: Opret bolig
         //TODO: Brug DatePicker fra UI til at ændre datoer i SeachBar.
-        //Eksempel på greb af værdien fra DatePicker og display den i en textblock er vist herunder.
+        //Eksempel på greb af værdien fra datepicker og display den i en textblock er vist herunder.
             //dp.SelectedDate = DateTime.Today;
 
             //DateTime? selectedDate = dp.SelectedDate;

@@ -8,14 +8,13 @@ namespace FranceVacances
 {
     class Houses
     {
-        //TODO: Indfør dictionary for facilities
         private double _price;
         private int _rooms;
         private string _location;
         private int _ratingOfficial;
         private int _ratingGuest;
         private string _destinationType;
-
+        
 
         private Dictionary<string, bool> facilitiesDict = new Dictionary<string, bool>()
         {
@@ -36,10 +35,8 @@ namespace FranceVacances
         /// <param name="price">Price pr. day</param>
         /// <param name="rooms">Number of rooms</param>
         /// <param name="address">The address of the house</param>
-        /// <param name="ratingOfficial">Official rating from Hotelstars Union</param>
-        /// <param name="ratingGuest">The rating </param>
-        /// <param name="destinationType"></param>
-        /// <param name="inputDict"></param>
+        /// <param name="destinationType">The type of house and vacation</param>
+        /// <param name="inputDict">Dictionary-type of facilities</param>
         public Houses(double price, int rooms, string address, string destinationType, Dictionary<string, bool> inputDict)
         {
             _price = price;
