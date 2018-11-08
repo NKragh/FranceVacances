@@ -3,12 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:FranceVacances.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="400" Width="800">
 
-    <!--<Window.DataContext>
+    <Window.DataContext>
         <viewModel:MainWindowViewModel/>
-    </Window.DataContext>-->
+    </Window.DataContext>
+
+    <Window.Background>
+        <ImageBrush ImageSource="/Pictures/Paristower.jpg"/>
+    </Window.Background>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -27,7 +32,6 @@
         </Grid.ColumnDefinitions>
 
         <!--HEADER-->
-        <Image Source="/Pictures/Paristower.jpg" Grid.ColumnSpan="6" Grid.RowSpan="3" Stretch="Fill"/>
         <!--TODO: Lav tekst om så det tilpasser sig størrelse på vind(r)ue.-->
         <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Text="France Vacances" 
                    VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="100" FontWeight="Bold"/>
@@ -44,7 +48,7 @@
         <!--FILTERFUNKTION-->
         <ListBox Grid.Row="2" Background="Transparent">
             <CheckBox Content="Internet"/>
-            <CheckBox Content="Internet"/>
+            <CheckBox Content="Køkken"/>
             <CheckBox Content="Internet"/>
             <CheckBox Content="Internet"/>
         </ListBox>

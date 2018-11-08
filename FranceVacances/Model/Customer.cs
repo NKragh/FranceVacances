@@ -25,5 +25,6 @@ namespace FranceVacances.Model
         {
             get { return name; }
         }
+        
     }
 }

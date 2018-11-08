@@ -4,29 +4,32 @@ namespace FranceVacances.Model
 {
     class Houses
     {
+
+        #region Properties
         private double _price;
         private int _rooms;
         private string _location;
         private int _ratingOfficial;
         private int _ratingGuest;
         private string _destinationType;
-        
-//TODO: Forklar dictionaries.
+
+        //TODO: Forklar dictionaries.
 
         private Dictionary<string, bool> facilitiesDict = new Dictionary<string, bool>()
         {
-            {"Internet", false},
-            {"Breakfast", false},
-            {"Dinner", false},
-            {"Pets", false},
-            {"Pool", false},
-            {"Parking", false},
-            {"Aircondition", false},
-            {"Kitchen", false},
-            {"Elevator", false},
+            //{"Internet", false},
+            //{"Breakfast", false},
+            //{"Dinner", false},
+            //{"Pets", false},
+            //{"Pool", false},
+            //{"Parking", false},
+            //{"Aircondition", false},
+            //{"Kitchen", false},
+            //{"Elevator", false},
         };
+        #endregion
 
-//TODO: Forklar constructor
+        #region Constructor
 
         /// <summary>
         /// Constructor of Houses class. Takes multiple inputs.
@@ -43,13 +46,11 @@ namespace FranceVacances.Model
             _location = address;
             _destinationType = destinationType;
 
-            foreach (KeyValuePair<string, bool> facility in facilitiesDict)
+            foreach (KeyValuePair<string, bool> facility in inputDict)
             {
-                if (inputDict.ContainsKey(facility.Key))
-                {
-                    inputDict[facility.Key] = facility.Value;
-                }
+                facilitiesDict[facility.Key] = inputDict[facility.Key];
             }
         }
+        #endregion  
     }
 }
