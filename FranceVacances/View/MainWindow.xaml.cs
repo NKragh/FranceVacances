@@ -26,24 +26,30 @@ namespace FranceVacances.View
             InitializeComponent();
         }
 
-        
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            Searchbar search = new Searchbar(travelType.Text, airportFrom.Text, airportTo.Text, dateInput.SelectedDate, Convert.ToInt32(numberOfTravelers.Text));
-            
-
+            Searchbar search = new Searchbar(travelType.Text, airportFrom.Text, airportTo.Text, dateInput.SelectedDate,
+                Convert.ToInt32(numberOfTravelers.Text));
             search.MakeSearch();
 
         }
 
-        //TODO: Opret bolig
+        private void HouseButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            //TODO: Navigér til CreateHouse.xaml
+            NavigationService navService = NavigationService.GetNavigationService(this);
+            navService.Navigate(new Uri(@"..\CreateHouse", UriKind.RelativeOrAbsolute));
+        }
+
+
+
         //TODO: Brug DatePicker fra UI til at ændre datoer i SeachBar.
         //Eksempel på greb af værdien fra datepicker og display den i en textblock er vist herunder.
         //dp.SelectedDate = DateTime.Today;
 
         //DateTime? selectedDate = dp.SelectedDate;
-
         //DateBlock.Text = selectedDate.Value.ToString("dd.MM.yyyy");
     }
 }

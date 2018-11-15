@@ -59,6 +59,7 @@
     <Compile Include="Model\Filters.cs" />
     <Compile Include="Model\Houses.cs" />
     <Compile Include="Model\Searchbar.cs" />
+    <Page Include="View\CreateHouse.xaml" />
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,6 +71,9 @@
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="View\CreateHouse.xaml.cs">
+      <DependentUpon>CreateHouse.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
