@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FranceVacances.Model;
+using FranceVacances.ViewModel;
 
 namespace FranceVacances.View
 {
@@ -26,8 +27,6 @@ namespace FranceVacances.View
             InitializeComponent();
         }
 
-
-
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             Searchbar search = new Searchbar(travelType.Text, airportFrom.Text, airportTo.Text, dateInput.SelectedDate,
@@ -39,8 +38,8 @@ namespace FranceVacances.View
         private void HouseButton_OnClick(object sender, RoutedEventArgs e)
         {
             //TODO: Navigér til CreateHouse.xaml
-            NavigationService navService = NavigationService.GetNavigationService(this);
-            navService.Navigate(new Uri(@"..\CreateHouse", UriKind.RelativeOrAbsolute));
+
+            DataContext = new UserControl1ViewModel();
         }
 
 

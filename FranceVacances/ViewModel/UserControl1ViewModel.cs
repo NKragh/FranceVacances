@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FranceVacances.View;
 
 namespace FranceVacances.ViewModel
 {
-    class MainWindowViewModel
+    class UserControl1ViewModel
     {
-        
     }
 }

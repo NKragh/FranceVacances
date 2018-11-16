@@ -59,7 +59,15 @@
     <Compile Include="Model\Filters.cs" />
     <Compile Include="Model\Houses.cs" />
     <Compile Include="Model\Searchbar.cs" />
+    <Compile Include="ViewModel\UserControl1ViewModel.cs" />
+    <Compile Include="View\UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\CreateHouse.xaml" />
+    <Page Include="View\Index.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,14 +78,22 @@
     </Compile>
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="ViewModel\CreateHouseViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="View\CreateHouse.xaml.cs">
       <DependentUpon>CreateHouse.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
