@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:FranceVacances.View"
       mc:Ignorable="d"
-      Title="CreateHouse" Height="450" Width="800">
+      Title="CreateHouse">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -22,17 +22,7 @@
 
         <!--BOLIGOVERSIGT-->
         <StackPanel Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5">
-            <ListBox>
-                <ListBoxItem Content="Test"/>
-                <ListBoxItem Content="Test"/>
-                <ListBoxItem Content="Test"/>
-                <ListBoxItem Content="Test"/>
-            </ListBox>
-            <ListView>
-                <ListViewItem Content="Test"/>
-                <ListViewItem Content="Test2"/>
-                <ListViewItem Content="Test3"/>
-                <ListViewItem Content="Test4"/>
+            <ListView x:Name="BoligListView">
             </ListView>
         </StackPanel>
     </Grid>

@@ -15,9 +15,9 @@
         </DataTemplate>
     </Window.Resources>
 
-    <!-- <Window.Background> -->
-    <!--     <ImageBrush ImageSource="/Pictures/Paristower.jpg" Opacity="0.475"/> -->
-    <!-- </Window.Background> -->
+    <Window.Background>
+        <ImageBrush ImageSource="/Pictures/Paristower.jpg" Opacity="0.475"/>
+    </Window.Background>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -34,7 +34,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
         <!--HEADER-->
         <!--TODO: Lav tekst om så det tilpasser sig størrelse på vind(r)ue.-->
         <TextBlock x:Name="FVLogo" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Text="France Vacances" 
@@ -50,38 +50,19 @@
         <!--Frame-->
         <!--The pages load into this container-->
         <Frame x:Name="Index" NavigationUIVisibility="Hidden"/>
-        
-        <!--SØGEFUNKTION-->
-        <TextBox x:Name="travelType" Grid.Row="2" Grid.Column="0" Text="Skriv din rejsetype her" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBox x:Name="airportTo" Grid.Row="2" Grid.Column="1" Text="Afrejse" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBox x:Name="airportFrom" Grid.Row="2" Grid.Column="2" Text="Destination" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <DatePicker x:Name="dateInput" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Height="30"/>
-        <TextBox x:Name="numberOfTravelers" Grid.Row="2" Grid.Column="4" Text="Vælg antal rejsende" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Button Grid.Row="2" Grid.Column="5" Width="100" Height="40" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Søg" Click="SearchButton_Click"/>
-        <!--<TextBox x:Name="testBox" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Width="300" Height="100"/>-->
 
-        <!-- ~1~FILTERFUNKTION@1@ -->
-        <!-- <ListBox Grid.Row="3" Grid.Column="0" Background="Transparent"> -->
-        <!--     <CheckBox Content="Internet"/> -->
-        <!--     <CheckBox Content="Køkken"/> -->
-        <!--     <CheckBox Content="Internet"/> -->
-        <!--     <CheckBox Content="Internet"/> -->
-        <!-- </ListBox> -->
-        <!-- -->
-        <!-- ~1~BOLIGOVERSIGT@1@ -->
-        <!-- <StackPanel Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="5"> -->
-        <!--     <ListBox> -->
-        <!--         <ListBoxItem Content="Test"/> -->
-        <!--         <ListBoxItem Content="Test"/> -->
-        <!--         <ListBoxItem Content="Test"/> -->
-        <!--         <ListBoxItem Content="Test"/> -->
-        <!--     </ListBox> -->
-        <!--     <ListView> -->
-        <!--         <ListViewItem Content="Test"/> -->
-        <!--         <ListViewItem Content="Test2"/> -->
-        <!--         <ListViewItem Content="Test3"/> -->
-        <!--         <ListViewItem Content="Test4"/> -->
-        <!--     </ListView> -->
-        <!-- </StackPanel> -->
+        <!--SØGEFUNKTION-->
+        <TextBox x:Name="travelType" Grid.Row="2" Grid.Column="0" Text="Skriv din rejsetype her"
+                VerticalAlignment="Center" HorizontalAlignment="Center" Height="25"/>
+        <TextBox x:Name="airportTo" Grid.Row="2" Grid.Column="1" Text="Afrejse" VerticalAlignment="Center"
+                HorizontalAlignment="Center" />
+        <TextBox x:Name="airportFrom" Grid.Row="2" Grid.Column="2" Text="Destination" VerticalAlignment="Center"
+                HorizontalAlignment="Center" />
+        <DatePicker x:Name="dateInput" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center"
+                HorizontalAlignment="Center" Width="100" Height="30" />
+        <TextBox x:Name="numberOfTravelers" Grid.Row="2" Grid.Column="4" Text="Vælg antal rejsende"
+                VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <Button Grid.Row="2" Grid.Column="5" Width="100" Height="40" VerticalAlignment="Center"
+                HorizontalAlignment="Center" Content="Søg" Click="SearchButton_Click" />
     </Grid>
 </Window>
